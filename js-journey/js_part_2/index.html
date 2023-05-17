@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> first demo website with javasript</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="images/logo.PNG" alt=""></a>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="personal-info">
+            <div class="persons-pic">
+                <img src="images/image1.jpg" alt="" id="image-change">
+                <button onclick="document.getElementById('image-change').src = 'images/image2.jpg';">Change
+                    Image</button>
+            </div>
+            <div class="personal-details">
+                <div class="custom">
+                    <div class="name-div">
+                        <p><b>Name :</b> <span id="name_change">Amelia</span></p> <button
+                            onclick="document.getElementById('name_change').innerHTML='EMMA'">Change Name</button>
+                    </div>
+                    <div class="address-div">
+                        <p><b>Address : </b> <span id="address_change">Figtree House, Cumbria</span> </p> <button
+                            onclick="document.getElementById('address_change').innerHTML='Straw Cottage, North Devon' ">Change
+                            Address</button>
+                    </div>
+                    <div class="phone-div">
+                        <p><b>Phone No :</b> <span id="Number_change">+444444</span></p> <button
+                            onclick="document.getElementById('Number_change').innerHTML='+555555'">Change Phone
+                            NUmber</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023</p>
+        <p> <a href="#"><i class="fa-brands fa-facebook"></i></a> <a href="#"><i
+                    class="fa-brands fa-linkedin-in"></i></a> <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </p>
+    </footer>
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
